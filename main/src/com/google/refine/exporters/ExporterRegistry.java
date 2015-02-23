@@ -50,7 +50,9 @@ abstract public class ExporterRegistry {
         s_formatToExporter.put("ods", new OdsExporter());
         
         s_formatToExporter.put("html", new HtmlTableExporter());
-        
+
+				s_formatToExporter.put("json", new JsonExporter());
+
         s_formatToExporter.put("template", new TemplatingExporter());
     }
     
